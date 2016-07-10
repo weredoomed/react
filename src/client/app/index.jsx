@@ -1,10 +1,20 @@
 import React from 'react';
-import {render} from 'react-dom';
+import {
+  render
+} from 'react-dom';
+import AwesomeComponent from './awesomeComponent.jsx';
 
 class App extends React.Component {
-  render () {
-    return <p> Hello React!</p>;
+  render() {
+    return ( <
+      div >
+      <
+      p > Hello React! < /p> <
+      AwesomeComponent / >
+      <
+      /div>
+    );
   }
 }
 
-render(<App/>, document.getElementById('app'));
+render( < App / > , document.getElementById('app'));
